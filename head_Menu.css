@@ -1,8 +1,11 @@
 <style>
+header {
+  padding
+}
 #topMenu
 {
   height: 30px; /* 메인 메뉴의 높이 */
-  width: 850px; /* 메인 메뉴의 넓이 */
+  width: 800px; /* 메인 메뉴의 넓이 */
 }
 #topMenu ul /* 메인 메뉴 안의 ul을 설정함: 상위메뉴의 ul+하위 메뉴의 ul */
 {
@@ -20,7 +23,16 @@
   text-align: center; /* 텍스트를 가운데로 정렬 */
   position: relative; /* 해당 li 태그 내부의 top/left 포지션 초기화 */
 }
-.menuLink, .submenuLink /* 상위 메뉴와 하위 메뉴의 a 태그에 공통으로 설정할 스타일 */
+.menuLink /* 상위 메뉴와 하위 메뉴의 a 태그에 공통으로 설정할 스타일 */
+{
+  text-decoration:none; /* a 태그의 꾸밈 효과 제거 */
+  display: block; /* a 태그의 클릭 범위를 넓힘 */
+  width: 150px; /* 기본 넓이를 150px로 설정 */
+  font-size: 12px; /* 폰트 사이즈를 12px로 설정 */
+  font-weight: bold; /* 폰트를 굵게 설정 */
+  font-family: "Trebuchet MS", Dotum; /* 기본 폰트를 영어/한글 순서대로 설정 */
+}
+.submenuLink
 {
   text-decoration:none; /* a 태그의 꾸밈 효과 제거 */
   display: block; /* a 태그의 클릭 범위를 넓힘 */
